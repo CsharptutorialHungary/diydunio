@@ -1,0 +1,38 @@
+Partlist
+
+Exported from arduino-day-arduino.sch at 2024. 04. 23. 18:11
+
+EAGLE Version 9.2.1 Copyright (c) 1988-2018 Autodesk, Inc.
+
+Assembly variant: 
+
+Part      Value            Device          Package      Library      Sheet
+
+3V3REG    MCP1700-3302E/TO MCP1700TRI      TO92         adafruit     1
+A0-A5                      FE06-1          FE06         con-lsta     1
+C1        1uF              C-EU025-025X050 C025-025X050 rcl          1
+C2        1uF              C-EU025-025X050 C025-025X050 rcl          1
+C3        22pF             C-EU025-025X050 C025-025X050 rcl          1
+C4        22pF             C-EU025-025X050 C025-025X050 rcl          1
+C5        22pF             C-EU025-025X050 C025-025X050 rcl          1
+D                          FE08-1          FE08         con-lsta     1
+I2C                        MA04-1          MA04-1       con-lstb     1
+ISP1      AVRISP-6         AVRISP-6        AVRISP       adafruit     1
+L1                         LED3MM          LED3MM       led          1
+L2                         LED3MM          LED3MM       led          1
+L3                         LED3MM          LED3MM       led          1
+MCU       ATMEGA328P-PU    ATMEGA328P-PU   DIL28-3      SmartPrj     1
+PWR                        FE08-1          FE08         con-lsta     1
+Q2        16Mhz            CRYSTALHC49S    HC49/S       crystal      1
+R1        10k              R-EU_0204/7     0204/7       rcl          1
+R2        10k              R-EU_0204/7     0204/7       rcl          1
+R3        10k              R-EU_0204/7     0204/7       rcl          1
+R4        1k               R-EU_0204/7     0204/7       rcl          1
+R5        1k               R-EU_0204/7     0204/7       rcl          1
+R6        1k               R-EU_0204/7     0204/7       rcl          1
+SV2                        FE10-1          FE10         con-lsta     1
+U-SCL-5V                   SJW             SJW          jumper       1
+U-SDA-5V                   SJW             SJW          jumper       1
+USB-I2C                    MA04-1          MA04-1       con-lstb     1
+USBSERIAL MCP2221          MCP2221         DIL14        Webmaster442 1
+X2        USB-B_TH         PN61729         PN61729      SmartPrj     1

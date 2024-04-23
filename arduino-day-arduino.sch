@@ -12627,7 +12627,7 @@ W = angled&lt;p&gt;
 <part name="L2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1"/>
 <part name="L3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1"/>
 <part name="P+15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="SJ2" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="SJ" device="W" package3d_urn="urn:adsk.eagle:package:15507/1"/>
+<part name="U-SDA-5V" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="SJ" device="W" package3d_urn="urn:adsk.eagle:package:15507/1"/>
 <part name="MCU" library="SmartPrj" deviceset="ATMEGA328P-" device="PU"/>
 <part name="Q2" library="crystal" deviceset="CRYSTAL" device="HC49S" value="16Mhz"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
@@ -12646,7 +12646,7 @@ W = angled&lt;p&gt;
 <part name="D" library="con-lsta" library_urn="urn:adsk.eagle:library:161" deviceset="FE08-1" device="" package3d_urn="urn:adsk.eagle:package:8194/1"/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="0204/7" value="10k"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="0204/7" value="10k"/>
-<part name="SJ1" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="SJ" device="W" package3d_urn="urn:adsk.eagle:package:15507/1"/>
+<part name="U-SCL-5V" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="SJ" device="W" package3d_urn="urn:adsk.eagle:package:15507/1"/>
 <part name="USB-I2C" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA04-1" device="" package3d_urn="urn:adsk.eagle:package:8337/1"/>
 <part name="I2C" library="con-lstb" library_urn="urn:adsk.eagle:library:162" deviceset="MA04-1" device="" package3d_urn="urn:adsk.eagle:package:8337/1"/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -12669,7 +12669,6 @@ W = angled&lt;p&gt;
 <sheets>
 <sheet>
 <plain>
-<text x="-48.26" y="-2.54" size="1.778" layer="91">Projekt felmásolása</text>
 </plain>
 <instances>
 <instance part="USBSERIAL" gate="G$1" x="-27.94" y="58.42" smashed="yes">
@@ -12701,7 +12700,7 @@ W = angled&lt;p&gt;
 <instance part="P+15" gate="1" x="-50.8" y="81.28" smashed="yes">
 <attribute name="VALUE" x="-53.34" y="76.2" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SJ2" gate="1" x="2.54" y="83.82" smashed="yes" rot="R90">
+<instance part="U-SDA-5V" gate="1" x="2.54" y="83.82" smashed="yes" rot="R90">
 <attribute name="NAME" x="0" y="81.28" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="6.35" y="81.28" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -12769,7 +12768,7 @@ W = angled&lt;p&gt;
 <attribute name="NAME" x="8.6614" y="67.31" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="13.462" y="67.31" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SJ1" gate="1" x="10.16" y="83.82" smashed="yes" rot="R90">
+<instance part="U-SCL-5V" gate="1" x="10.16" y="83.82" smashed="yes" rot="R90">
 <attribute name="NAME" x="7.62" y="81.28" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="13.97" y="81.28" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -12882,10 +12881,10 @@ W = angled&lt;p&gt;
 <wire x1="-17.78" y1="30.48" x2="-17.78" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SJ2" gate="1" pin="2"/>
+<pinref part="U-SDA-5V" gate="1" pin="2"/>
 <wire x1="2.54" y1="88.9" x2="2.54" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="91.44" x2="10.16" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="SJ1" gate="1" pin="2"/>
+<pinref part="U-SCL-5V" gate="1" pin="2"/>
 <wire x1="10.16" y1="91.44" x2="10.16" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="P+3" gate="1" pin="+5V"/>
 <wire x1="2.54" y1="91.44" x2="-5.08" y2="91.44" width="0.1524" layer="91"/>
@@ -13361,13 +13360,13 @@ W = angled&lt;p&gt;
 <net name="N$17" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="SJ2" gate="1" pin="1"/>
+<pinref part="U-SDA-5V" gate="1" pin="1"/>
 <wire x1="2.54" y1="78.74" x2="2.54" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="SJ1" gate="1" pin="1"/>
+<pinref part="U-SCL-5V" gate="1" pin="1"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="10.16" y1="78.74" x2="10.16" y2="76.2" width="0.1524" layer="91"/>
 </segment>
